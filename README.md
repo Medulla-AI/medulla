@@ -1,2 +1,2 @@
 # Face-Generator
-A face generation deep convolutional generative adversarial network
+A face generating deep convolutional generative adversarial network
