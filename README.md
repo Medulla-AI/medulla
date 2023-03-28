@@ -1,2 +1,2 @@
-# Face-Generator
-A face generating deep convolutional generative adversarial network
+# PINE: ML, Language and Vision Algorithms In C++
+In active development
