@@ -1,5 +1,4 @@
 # PINE: A Library of Supporting ML, Language, Vision, Speech, Robotics & Neuroscience Algorithms in JAX.
-In active development
 
 # Authors
 Principal Developer - Henry Ndubuaku (ndubuakuhenry@gmail.com)
