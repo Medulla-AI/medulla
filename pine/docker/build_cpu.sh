@@ -1,0 +1,1 @@
+docker build -t pine:latest -f Dockerfile ..

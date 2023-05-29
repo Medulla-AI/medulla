@@ -1,0 +1,18 @@
+ARG UBUNTU_VERSION=22.04
+ARG CUDA=11.2
+
+FROM nvidia/cuda:${CUDA}.1-base-ubuntu${UBUNTU_VERSION} as base
+USER root
+
+RUN apt-get update && apt-get install python3 python3-pip git -y
+RUN pip3 install --upgrade pip
+
+RUN git clone https://github.com/HMUNACHI/PINE
+
+WORKDIR /PINE
+
+COPY ../requirements .
+
+RUN pip3 install -r requirements/requirements_gpu.txt
+
+CMD ["bash"]
