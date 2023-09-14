@@ -20,8 +20,6 @@ def embeddings_compare(source: np.ndarray,
     """
     source = np.asarray(source)
     candidates = np.asarray(candidates)
-    return np.dot(candidates, source) / (norm(source) * norm(candidates, axis=1))
-
-source = np.array([1.0, 2.0, 3.0])
-candidates = np.array([])  # Empty array
-print(embeddings_compare(source, candidates))
+    norm_source = (norm(source)) 
+    norm_candidates = norm(candidates, axis=1) 
+    return np.dot(candidates, source) / (np.maximum(norm_source * norm_candidates, 1e-8))
