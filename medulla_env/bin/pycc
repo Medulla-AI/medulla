@@ -1,0 +1,3 @@
+#!/Users/mac1/Desktop/medulla/medulla_env/bin/python
+from numba.pycc import main
+main()
